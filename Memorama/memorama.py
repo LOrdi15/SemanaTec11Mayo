@@ -1,4 +1,5 @@
-"""Memory, puzzle game of number pairs.
+"""
+Memory, puzzle game of number pairs.
 
 Exercises:
 
@@ -13,6 +14,8 @@ from random import *
 from turtle import *
 
 from freegames import path
+
+writer = Turtle()
 
 car = path('car.gif')
 tiles = list(range(32)) * 2
@@ -81,8 +84,23 @@ def draw():
     ontimer(draw, 100)
 
 
+def info_alumnos():
+    writer.hideturtle()
+    writer.up()
+    writer.goto(-200,220)
+    writer.color('blue')
+    writer.write('Alejandro Guevara Olivares A00834438', align = 'left', font=('Arial',10,'normal'))
+    writer.goto(-200,210)
+    writer.color('red')
+    writer.write('Christian Gutierrez Briones A01284471', align = 'left', font=('Arial',10,'normal'))
+    writer.goto(-200,200)
+    writer.color('green')
+    writer.write('José Andrés Ordieres A01382904', align = 'left', font=('Arial',10,'normal'))
+info_alumnos()
+
+
 shuffle(tiles)
-setup(420, 420, 370, 0)
+setup(500, 500, 370, 0)
 addshape(car)
 hideturtle()
 tracer(False)
