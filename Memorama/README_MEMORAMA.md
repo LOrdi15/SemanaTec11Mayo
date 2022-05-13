@@ -36,6 +36,7 @@ info_alumnos()
 setup(500, 500, 370, 0)
 
 ```
+![7LZ5C-](https://i.makeagif.com/media/5-13-2022/7LZ5C-.gif)
 
 ### Detectar si todos los cuadros se han destapado
 **Alejandro Guevara**
@@ -59,3 +60,4 @@ def ganaste():
         return True
 
 ```
+![Z6Z-q9](https://i.makeagif.com/media/5-13-2022/Z6Z-q9.gif)
