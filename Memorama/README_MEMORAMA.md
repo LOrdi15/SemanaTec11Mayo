@@ -10,7 +10,7 @@
 
 ## Desplegar los nombres de los integrantes
 **Alejandro Guevara**
-´´´python
+´´´
 
 writer = Turtle()
 
@@ -32,7 +32,7 @@ info_alumnos()
 
 ## Detectar si todos los cuadros se han destapado
 **Alejandro Guevara**
-´´´python
+´´´
 
 """ Esto va dentro de la función draw(), al final antes del update() """
 if ganaste() == True:
