@@ -50,7 +50,7 @@ def tap(x, y):
     """Update mark and hidden tiles based on tap."""
     spot = index(x, y)
     mark = state['mark']
-
+ 
     if mark is None or mark == spot or tiles[mark] != tiles[spot]:
         state['mark'] = spot
     else:
@@ -79,9 +79,27 @@ def draw():
         goto(x + 2, y)
         color('black')
         write(tiles[mark], font=('Arial', 30, 'normal'))
-
+            
+    if ganaste() == True:
+        writer.hideturtle()
+        writer.up()
+        writer.goto(-130,-220)
+        writer.color('blue')
+        writer.write('GANASTE UN AUTO!!, FELICIDADES', align = 'left', font=('Arial',15,'normal'))
+        
     update()
     ontimer(draw, 100)
+    
+
+
+def ganaste():
+    contador = 0
+    for count in range(64):
+        if hide[count] == False:
+            contador = contador + 1
+    if contador == 64:
+        return True
+
 
 
 def info_alumnos():
