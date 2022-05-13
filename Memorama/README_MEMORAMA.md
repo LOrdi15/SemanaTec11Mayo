@@ -10,7 +10,7 @@
 
 ## Desplegar los nombres de los integrantes
 **Alejandro Guevara**
-´´´
+```
 
 writer = Turtle()
 
@@ -28,11 +28,11 @@ def info_alumnos():
     writer.write('José Andrés Ordieres A01382904', align = 'left', font=('Arial',10,'normal'))
 info_alumnos()
 
-´´´
+```
 
 ## Detectar si todos los cuadros se han destapado
 **Alejandro Guevara**
-´´´
+```
 
 """ Esto va dentro de la función draw(), al final antes del update() """
 if ganaste() == True:
@@ -51,4 +51,4 @@ def ganaste():
     if contador == 64:
         return True
 
-´´´
+```
