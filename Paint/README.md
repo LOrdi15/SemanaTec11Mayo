@@ -18,6 +18,7 @@
 # Añadimos color amarillo
 onkey(lambda: color('yellow'), 'Y')
 ```
+![gfa3eB](https://i.makeagif.com/media/5-13-2022/gfa3eB.gif)
 
 ### def circle1(start, end)
 - Dibuja un círculo 
@@ -39,6 +40,7 @@ def circle1(start, end):
     
     end_fill()
 ```
+![oUJJTW](https://i.makeagif.com/media/5-13-2022/oUJJTW.gif)
 
 ### def nombres()
 - Desplega los nombres y las matrículas de los integrantes del equipo
@@ -68,3 +70,4 @@ def nombres():
 # Llamado a la función
 nombres()
 ```
+![k0b7AG](https://i.makeagif.com/media/5-13-2022/k0b7AG.gif)
