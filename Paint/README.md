@@ -10,7 +10,7 @@
 
 ## Funciones Agregadas
 
-**Un color nuevo**
+### Un color nuevo
 - Añade un color nuevo a la lista de opciones (amarillo) 
 - Autor: Alejandro Guevara Olivares
 - Código:
@@ -19,7 +19,7 @@
 onkey(lambda: color('yellow'), 'Y')
 ```
 
-**def circle1(start, end)**
+### def circle1(start, end)
 - Dibuja un círculo 
 - Autor: Alejandro Guevara Olivares
 - Código:
@@ -40,7 +40,7 @@ def circle1(start, end):
     end_fill()
 ```
 
-**def nombres()**
+### def nombres()
 - Desplega los nombres y las matrículas de los integrantes del equipo
 - Autor: Alejandro Guevara Olivares
 - Código:
