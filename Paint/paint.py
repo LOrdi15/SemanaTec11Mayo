@@ -39,11 +39,22 @@ def square(start, end):
 
     end_fill()
 
-
-def circle(start, end):
+# Función circle1 (cambiamos el nombre para diferenciar de la función "circle" ya existente en la librería Turtle)
+def circle1(start, end):
     """Draw circle from start to end."""
-    pass  # TODO
-
+    up()
+    goto(start.x, start.y)
+    down()
+    # Calculamos el radio
+    radio = (end.x - start.x)/2
+    
+    begin_fill()
+    # Hacemos uso de la función ya existente "circle(radio, extent, steps)"
+    circle(radio, None, None)
+    
+    end_fill()
+ 
+   
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
@@ -83,10 +94,11 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+# Añadimos color amarillo
 onkey(lambda: color('yellow'), 'Y')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
-onkey(lambda: store('shape', circle), 'c')
+onkey(lambda: store('shape', circle1), 'c')
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
 done()
