@@ -5,7 +5,7 @@
 
 # Links
 ### Link de Alejandro:
-
+[Video Final Semana Tec](https://youtu.be/5L-JDn4FV0Q)
 
 ### Link de Christian:
 
