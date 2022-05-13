@@ -15,6 +15,7 @@ from turtle import *
 
 from freegames import path
 
+# La variable writer va a ser un objeto de tipo Turtle
 writer = Turtle()
 
 car = path('car.gif')
@@ -79,7 +80,8 @@ def draw():
         goto(x + 2, y)
         color('black')
         write(tiles[mark], font=('Arial', 30, 'normal'))
-            
+    
+    # Se despliega un mensage si ganaste() regresa True
     if ganaste() == True:
         writer.hideturtle()
         writer.up()
@@ -91,29 +93,37 @@ def draw():
     ontimer(draw, 100)
     
 
-
+# Función ganaste, que regresa como valor de retorno True si la variable contador es igual a 64
 def ganaste():
     contador = 0
+    # Ciclo para pasar por todos los cuadros
     for count in range(64):
+        # Se checa cada cuadro
         if hide[count] == False:
             contador = contador + 1
     if contador == 64:
         return True
 
 
-
+# Función info_alumnos, que despliega los nombres de los integrantes
 def info_alumnos():
+    # Escondemos la flechita
     writer.hideturtle()
+    # Escondemos la trayectoria de la flechita
     writer.up()
+    # Info del primer integrante
     writer.goto(-200,220)
     writer.color('blue')
     writer.write('Alejandro Guevara Olivares A00834438', align = 'left', font=('Arial',10,'normal'))
+    # Info del segundo integrante
     writer.goto(-200,210)
     writer.color('red')
     writer.write('Christian Gutierrez Briones A01284471', align = 'left', font=('Arial',10,'normal'))
+    # Info del tercer integrante
     writer.goto(-200,200)
     writer.color('green')
     writer.write('José Andrés Ordieres A01382904', align = 'left', font=('Arial',10,'normal'))
+# Llamado a la función
 info_alumnos()
 
 
