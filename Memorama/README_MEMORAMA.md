@@ -4,14 +4,16 @@
 ### José Andrés Ordieres A01382904
 
 # Links
-## Link de Alejandro:
+### Link de Alejandro:
 
-## Link de Christian:
 
-## Link de José:
+### Link de Christian:
+
+
+### Link de José:
 
 # Código que Añadimos
-## Desplegar los nombres de los integrantes
+### Desplegar los nombres de los integrantes
 **Alejandro Guevara**
 ```
 
@@ -35,7 +37,7 @@ setup(500, 500, 370, 0)
 
 ```
 
-## Detectar si todos los cuadros se han destapado
+### Detectar si todos los cuadros se han destapado
 **Alejandro Guevara**
 ```
 
