@@ -31,6 +31,8 @@ def info_alumnos():
     writer.write('José Andrés Ordieres A01382904', align = 'left', font=('Arial',10,'normal'))
 info_alumnos()
 
+setup(500, 500, 370, 0)
+
 ```
 
 ## Detectar si todos los cuadros se han destapado
