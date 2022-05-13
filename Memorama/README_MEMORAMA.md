@@ -2,11 +2,11 @@
 ### Christian Gutierrez Briones A01284471
 ### José Andrés Ordieres A01382904
 
-### Link de Alejandro:
+## Link de Alejandro:
 
-### Link de Christian:
+## Link de Christian:
 
-### Link de José:
+## Link de José:
 
 ## Desplegar los nombres de los integrantes
 **Alejandro Guevara**
