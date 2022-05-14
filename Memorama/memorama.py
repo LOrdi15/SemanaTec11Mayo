@@ -9,7 +9,7 @@ Exercises:
 4. Center single-digit tile.
 5. Use letters instead of tiles.
 """
-#prueba chris
+
 from random import *
 from turtle import *
 
@@ -23,7 +23,7 @@ tiles = list(range(32)) * 2
 state = {'mark': None}
 hide = [True] * 64
 
-
+#prueba chris
 def square(x, y):
     """Draw white square with black outline at (x, y)."""
     up()
