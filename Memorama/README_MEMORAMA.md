@@ -8,7 +8,7 @@
 [Video Final Semana Tec](https://youtu.be/5L-JDn4FV0Q)
 
 ### Link de Christian:
-
+[Video Final Semana Tec](https://youtu.be/dHbRuNk5X0U)
 
 ### Link de José:
 
