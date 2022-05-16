@@ -11,7 +11,7 @@
 [Video Final Semana Tec](https://youtu.be/dHbRuNk5X0U)
 
 ### Link de José:
-
+[Video Final Semana Tec](https://youtu.be/ltE8xBrh01o)
 # Código que Añadimos
 ### Desplegar los nombres de los integrantes
 **Alejandro Guevara**
