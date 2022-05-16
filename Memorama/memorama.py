@@ -9,7 +9,7 @@ from freegames import path
 writer = Turtle()
 
 car = path('car.gif')
-
+#1
 #Arreglo de emojis
 tiles = ["\U0001F603","\U0001F601","\U0001F605","\U0001F923","\U0001F602","\U0001F642","\U0001F643","\U0001F609",
             "\U0001F970", "\U0001F929","\U0001F618","\U0001F911","\U0001F972","\U0001F917","\U0001F914","\U0001F928",
