@@ -20,6 +20,59 @@ hide = [True] * 64
 N_taps = 0
 win = 0  
 
+#Turtles para escribir en pantalla
+t = turtle.Turtle()
+t1 = turtle.Turtle()
+t2 = turtle.Turtle()
+t3 = turtle.Turtle()
+t4 = turtle.Turtle()
+#Turtle 5 escribe cuando se haya completado el memorama, por esto mismo la ocultamos con hideturtle()
+t5 = turtle.Turtle()
+t5.hideturtle()
+
+#funcion que dibuja cuadrados blancos con perimetro negro
+def square(x, y):
+    up()
+    goto(x, y)
+    down()
+    color('black', 'white')
+    begin_fill()
+    for count in range(4):
+        forward(50)
+        left(90)
+    end_fill()
+
+#funcion que asigna la coordenada x y y con un cuadro 
+def index(x, y):
+    return int((x + 200) // 50 + ((y + 200) // 50) * 8)
+
+#funcion que convierte cuadros a coordenadas
+def xy(count):
+    return (count % 8) * 50 - 200, (count // 8) * 50 - 200
+
+#funcion donde se actualiza el estado de los cuadros a base de los taps
+def tap(x, y):
+    # variable para contar el numero de taps
+    global N_taps, win
+    N_taps += 1
+    spot = index(x, y)
+    mark = state['mark']
+    if mark is None or mark == spot or tiles[mark] != tiles[spot]:
+        state['mark'] = spot
+    else:
+        hide[spot] = False
+        hide[mark] = False
+        state['mark'] = None
+        #cuando se encuentre un par igual usamos un contador para indicar cuando se completa el memorama
+        win += 1
+        #si se encuentran los 32 pares, se mostrara el mensaje que ganaste
+        if(win == 32):
+            t5.setposition(0, -230)
+            t5.color('deep pink')
+            style2 = ('Courier', 30, 'italic')
+            t5.write("GANASTE!!" , font=style2, align='center')
+            t5.hideturtle()
+
 def square(x, y):
     """Draw white square with black outline at (x, y)."""
     up()
