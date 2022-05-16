@@ -1,14 +1,4 @@
-"""
-Memory, puzzle game of number pairs.
 
-Exercises:
-
-1. Count and print how many taps occur.
-2. Decrease the number of tiles to a 4x4 grid.
-3. Detect when all tiles are revealed.
-4. Center single-digit tile.
-5. Use letters instead of tiles.
-"""
 
 from random import *
 from turtle import *
@@ -19,9 +9,15 @@ from freegames import path
 writer = Turtle()
 
 car = path('car.gif')
-tiles = list(range(32)) * 2
+#Arreglo de emojis
+tiles = ["\U0001F603","\U0001F601","\U0001F605","\U0001F923","\U0001F602","\U0001F642","\U0001F643","\U0001F609",
+            "\U0001F970", "\U0001F929","\U0001F618","\U0001F911","\U0001F972","\U0001F917","\U0001F914","\U0001F928",
+            "\U0001F611", "\U0001F612","\U0001F644","\U0001F614","\U0001F924","\U0001F634","\U0001F912","\U0001F915",
+            "\U0001F922","\U0001F927","\U0001F975","\U0001F976","\U0001F974" ,"\U0001F920","\U0001F973","\U0001F978	"] * 2
 state = {'mark': None}
 hide = [True] * 64
+N_taps = 0
+win = 0  
 
 
 def square(x, y):
